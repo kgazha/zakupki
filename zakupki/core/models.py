@@ -37,6 +37,7 @@ class Organization(models.Model):
     fact_address = models.CharField(max_length=255, blank=True, null=True)
     inn = models.CharField(max_length=255, unique=True)
     kpp = models.CharField(max_length=255, blank=True, null=True)
+    okato = models.CharField(max_length=255, blank=True, null=True)
     date_added = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
 

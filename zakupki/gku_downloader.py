@@ -23,5 +23,5 @@ for resource in resources:
     foldername = resource
     for path in paths:
         file_names = downloader.get_file_names(path, '.+\.xml\.zip')
-        file_names = [name for name in file_names if '2019' in name]
+        file_names = [name for name in file_names if 'obl_2019' in name]
         download_files(downloader, path, foldername, file_names)
